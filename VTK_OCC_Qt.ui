@@ -1,0 +1,174 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>VTK_OCC_QtClass</class>
+ <widget class="QMainWindow" name="VTK_OCC_QtClass">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>1345</width>
+    <height>822</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>VTK_OCC_Qt</string>
+  </property>
+  <widget class="QWidget" name="centralWidget">
+   <widget class="QVTKOpenGLNativeWidget" name="openGLWidget">
+    <property name="geometry">
+     <rect>
+      <x>0</x>
+      <y>0</y>
+      <width>1351</width>
+      <height>771</height>
+     </rect>
+    </property>
+   </widget>
+  </widget>
+  <widget class="QMenuBar" name="menuBar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>1345</width>
+     <height>23</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu">
+    <property name="title">
+     <string>文件</string>
+    </property>
+    <addaction name="display"/>
+    <addaction name="play"/>
+    <addaction name="HeadSlice"/>
+    <addaction name="IronIsoSurface"/>
+    <addaction name="ComplexV"/>
+    <addaction name="Kitchen"/>
+    <addaction name="TensorAxes"/>
+   </widget>
+   <widget class="QMenu" name="menuOCC">
+    <property name="title">
+     <string>OCC文件</string>
+    </property>
+    <addaction name="step"/>
+    <addaction name="point"/>
+    <addaction name="lorenz"/>
+   </widget>
+   <widget class="QMenu" name="menu_2">
+    <property name="title">
+     <string>文件读取</string>
+    </property>
+    <addaction name="actionreadIGS"/>
+    <addaction name="makebox"/>
+    <addaction name="makecone"/>
+    <addaction name="OnButtonCreatepnt"/>
+    <addaction name="OnButtonCereatlin"/>
+    <addaction name="OnButtonCereatface"/>
+   </widget>
+   <addaction name="menu"/>
+   <addaction name="menuOCC"/>
+   <addaction name="menu_2"/>
+  </widget>
+  <widget class="QToolBar" name="mainToolBar">
+   <attribute name="toolBarArea">
+    <enum>TopToolBarArea</enum>
+   </attribute>
+   <attribute name="toolBarBreak">
+    <bool>false</bool>
+   </attribute>
+  </widget>
+  <widget class="QStatusBar" name="statusBar"/>
+  <action name="display">
+   <property name="text">
+    <string>显示</string>
+   </property>
+  </action>
+  <action name="play">
+   <property name="text">
+    <string>多重显示</string>
+   </property>
+  </action>
+  <action name="HeadSlice">
+   <property name="text">
+    <string>人脑切片</string>
+   </property>
+  </action>
+  <action name="IronIsoSurface">
+   <property name="text">
+    <string>铁蛋白表面</string>
+   </property>
+  </action>
+  <action name="ComplexV">
+   <property name="text">
+    <string>组合展示</string>
+   </property>
+  </action>
+  <action name="Kitchen">
+   <property name="text">
+    <string>厨房</string>
+   </property>
+  </action>
+  <action name="TensorAxes">
+   <property name="text">
+    <string>张量轴</string>
+   </property>
+  </action>
+  <action name="step">
+   <property name="text">
+    <string>打开step文件</string>
+   </property>
+  </action>
+  <action name="point">
+   <property name="text">
+    <string>点击</string>
+   </property>
+  </action>
+  <action name="lorenz">
+   <property name="text">
+    <string>Lorenz</string>
+   </property>
+  </action>
+  <action name="actionreadIGS">
+   <property name="text">
+    <string>读取IGS</string>
+   </property>
+  </action>
+  <action name="makebox">
+   <property name="text">
+    <string>盒子</string>
+   </property>
+  </action>
+  <action name="makecone">
+   <property name="text">
+    <string>曲面</string>
+   </property>
+  </action>
+  <action name="OnButtonCreatepnt">
+   <property name="text">
+    <string>创建点</string>
+   </property>
+  </action>
+  <action name="OnButtonCereatlin">
+   <property name="text">
+    <string>创建线</string>
+   </property>
+  </action>
+  <action name="OnButtonCereatface">
+   <property name="text">
+    <string>创建面</string>
+   </property>
+  </action>
+ </widget>
+ <layoutdefault spacing="6" margin="11"/>
+ <customwidgets>
+  <customwidget>
+   <class>QVTKOpenGLNativeWidget</class>
+   <extends>QOpenGLWidget</extends>
+   <header location="global">qvtkopenglnativewidget.h</header>
+  </customwidget>
+ </customwidgets>
+ <resources>
+  <include location="VTK_OCC_Qt.qrc"/>
+ </resources>
+ <connections/>
+</ui>

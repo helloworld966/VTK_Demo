@@ -1,0 +1,13 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <QTDIR>D:\Qt5.14.2\5.14.2\msvc2017_64</QTDIR>
+    <LocalDebuggerEnvironment>PATH=$(QTDIR)\bin%3b$(PATH)</LocalDebuggerEnvironment>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <QTDIR>D:\Qt5.14.2\5.14.2\msvc2017_64</QTDIR>
+    <DebuggerFlavor>WindowsLocalDebugger</DebuggerFlavor>
+    <LocalDebuggerEnvironment>PATH=$(QTDIR)\bin%3bE:\OCCT\OCCT-build\win64\vc14\bin%3bE:\vtk9.1\vtk9.1.0\release\bin%3bE:\OCCT\build\freetype-2.5.5-vc14-64\freetype-2.5.5-vc14-64\bin%3bE:\OCCT\build\freeimage-3.17.0-vc14-64\freeimage-3.17.0-vc14-64\bin%3bE:\SARibbon\SARibbon\bin_qt5.12.9_MSVC_x64\bin%PATH%</LocalDebuggerEnvironment>
+  </PropertyGroup>
+</Project>
